@@ -525,14 +525,6 @@ h2 {
 }
 .pub-links a:hover { color: var(--accent); border-color: var(--accent); }
 
-.pub-note {
-  color: var(--muted);
-  opacity: 0.8;
-  font-style: italic;
-  text-transform: none;
-  letter-spacing: 0;
-}
-
 /* Contact ---------------------------------------------------------------- */
 
 .contact-lede {
