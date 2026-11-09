@@ -3,8 +3,8 @@
 Personal academic website for **Fengning Yang** — perovskite photovoltaics,
 device stability, and operando characterisation.
 
-Plain HTML, CSS and a little JavaScript. No build step, no dependencies, no
-tracking. Hosted for free on GitHub Pages.
+Plain HTML, CSS and a little JavaScript. No build step, no third-party
+requests, no tracking. Hosted for free on GitHub Pages.
 
 ## Files
 
@@ -16,7 +16,8 @@ tracking. Hosted for free on GitHub Pages.
 ├── 404.html            # custom not-found page
 ├── portrait.jpg        # headshot (4:5 crop); replace with a recent photo
 ├── assets/
-│   └── favicon.svg     # browser tab icon
+│   ├── favicon.svg     # browser tab icon
+│   └── fonts/          # self-hosted Newsreader (SIL Open Font License)
 ├── .nojekyll           # tells GitHub Pages to serve files as-is
 └── README.md
 ```
@@ -24,7 +25,9 @@ tracking. Hosted for free on GitHub Pages.
 ## Deploy
 
 1. Create the repository **`FengningY/FengningY.github.io`** (public).
-2. Upload every file to the repository root: **Add file → Upload files**.
+2. Upload every file **and the `assets/` folder** to the repository root:
+   **Add file → Upload files**. The folder is easy to miss, and without it the
+   tab icon and the serif headings fall back to system fonts.
 3. **Settings → Pages** → *Deploy from a branch* → branch **`main`**,
    folder **`/ (root)`** → **Save**.
 4. The site goes live at <https://fengningy.github.io> within a minute or two.
@@ -42,6 +45,11 @@ Every push to `main` redeploys automatically.
 - **Favicon**: `assets/favicon.svg` — change the `FY` text or the `fill`.
 
 ## Notes
+
+- Headings use **Newsreader**, self-hosted in `assets/fonts/` (22 KB, latin
+  subset). It is licensed under the SIL Open Font License; the licence text is
+  included next to the font file.
+- The site has no third-party requests: no Google Fonts, no analytics.
 
 - The CV is **not** published here. The PDF contains a phone number; redact it
   before uploading a public copy, then link it from the hero or contact
